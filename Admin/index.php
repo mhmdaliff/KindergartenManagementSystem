@@ -1,3 +1,11 @@
+<?php
+session_start();
+require '../connection.php';
+
+$sql = "SELECT * FROM kereta";
+$result = mysqli_query($conn, $sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,14 +42,29 @@
                     <th>Username</th>
                     <th>Nama Penuh</th>
                     <th>Password</th>
-                    <th>Tindakan</th>
                 </tr>
-                <tr>
-                    <td>Ali</td>
-                    <td>Ali Bin Abu</td>
-                    <td>123456</td>
-                    <td><a href="reset/">(Reset)</a><a href="edit/">(Edit)</a><a href="Padam">(Padam)</a></td>
-                </tr>
+                <?php
+                if (mysqli_num_rows($result) > 0) {
+
+
+                    while ($row = mysqli_fetch_assoc($result)) {
+                ?>
+
+                        <tr>
+                            <td><?php echo $row["idguru"]; ?></td>
+                            <td><?php echo $row["idname"]; ?></td>
+                            <td><?php echo $row["password"]; ?></td>
+                        </tr>
+
+                <?php
+
+                    }
+                } else {
+                    echo "0 results";
+                }
+                mysqli_close($conn);
+                ?>
+
             </table>
         </form>
     </center>

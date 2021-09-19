@@ -15,21 +15,47 @@
         <br>Nama Programmer :<a href="guru/">Guru(Amin)</a>
 
         <h1>Daftar senarai ibubapa</h1>
-            <form method="post">
-                <table>
+        <form method="post">
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="text" name="password"></td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td><textarea id="address" name="address" rows="4" cols="50" value=""></textarea></td>
+                </tr>
+                <tr>
+                    <td>No. Telefon</td>
+                    <td><input type="text" name="contact" value="" required></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Simpan</button></td>
+                </tr>
+                <table border="1">
                     <tr>
-                        <td>Username</td>
-                        <td><input type="text" name="username"></td>
+                        <th>Username</th>
+                        <th>Nama Penuh</th>
+                        <th>Alamat</th>
+                        <th>No. Telefon</th>
+                        <th>Password</th>
+                        <th>Tindakan</th>
+
                     </tr>
                     <tr>
-                        <td>Password</td>
-                        <td><input type="text" name="password"></td>
-                    </tr>
-                    <tr>
-                        <td><button type="submit">Simpan</button></td>
+                        <td>Mazlia</td>
+                        <td>Siti Mazlia Binti Bakhri</td>
+                        <td>Taman Indah Jaya,Kedah</th>
+                        <td>0198765432</td>
+                        <td>445566</td>
+                        <td><a href="reset/">(Reset)</a><a href="edit/">(Edit)</a><a href="Padam">(Padam)</a></td>
                     </tr>
                 </table>
-            </form>
+        </form>
     </center>
 </body>
 
