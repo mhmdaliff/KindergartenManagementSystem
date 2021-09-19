@@ -22,7 +22,7 @@ $row = $resultusr->fetch_assoc();
 
         <h2>Update Guru</h2>
 
-        <form name="myform" action="updatepro.php" method="post">
+        <form action="updatepro.php" method="post">
             <br>
             <b>Id Guru :</b>
             <input type="text" name="idguru" value="<?php echo $row["idguru"]; ?>">
@@ -37,7 +37,7 @@ $row = $resultusr->fetch_assoc();
             <br>
 
             <input type="submit" value="Update" />
-            <input type="hidden" name="idGuru" value="<?php echo $row["idguru"]; ?>" />
+            <input type="hidden" name="idguru" value="<?php echo $row["idguru"]; ?>" />
         </form>
     </center>
 </body>
