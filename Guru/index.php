@@ -30,7 +30,11 @@ $result = mysqli_query($conn, $sql);
                 </tr>
                 <tr>
                     <td>Nama Penuh</td>
-                    <td><input type="text" name="idname"></td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="int" name="password"></td>
                 </tr>
                 <tr>
                     <td>Alamat</td>
@@ -48,6 +52,7 @@ $result = mysqli_query($conn, $sql);
                     <tr>
                         <thi>idibubapa</th>
                         <th>Nama Penuh</th>
+                        <th>Password</th>
                         <th>Alamat</th>
                         <th>No. Telefon</th>
 
@@ -59,10 +64,11 @@ $result = mysqli_query($conn, $sql);
                         while ($row = mysqli_fetch_assoc($result)) {
                     ?>
                             <tr>
-                                <td><?php echo $row["idibubapa"]; ?></td>
-                                <td><?php echo $row["idname"]; ?></td>
+                                <td><?php echo $row["id_ibubapa"]; ?></td>
+                                <td><?php echo $row["username"]; ?></td>
+                                <td><?php echo $row["password"]; ?></td>
                                 <td><?php echo $row["alamat"]; ?></td>
-                                <td><?php echo $row["notelefon"]; ?></td>
+                                <td><?php echo $row["no_telefon"]; ?></td>
                                 
                             </tr>
 
