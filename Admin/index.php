@@ -22,8 +22,8 @@
                     <td><input type="text" name="username"></td>
                 </tr>
                 <tr>
-                    <td>Nama Penuh</td>
-                    <td><input type="text" name="fullname"></td>
+                    <td>Password</td>
+                    <td><input type="text" name="password"></td>
                 </tr>
                 <tr>
                     <td><button type="submit">Simpan</button></td>
