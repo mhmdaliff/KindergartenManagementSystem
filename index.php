@@ -34,7 +34,7 @@
             <li><a href="manager/index.php">Guru (Amin)</a></li>
             <p>- Menguruskan senarai Ibubapa</p>
 
-            <li><a href="customer/index.php">Ibubapa (Merisa    )</a></li>
+            <li><a href="customer/index.php">Ibubapa (Merisa)</a></li>
             <p>- Menguruskan senarai anak-anak</p>
         </ul>
 
