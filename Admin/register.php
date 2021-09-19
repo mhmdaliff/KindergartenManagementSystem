@@ -16,7 +16,7 @@ require '../connection.php';
 
         <h2>Register Guru</h2>
 
-        <form action="index.php" method="post">
+        <form action="save.php" method="post">
 
             <table align="center">
                 <tr>
