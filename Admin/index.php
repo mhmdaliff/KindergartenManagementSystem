@@ -29,6 +29,20 @@
                     <td><button type="submit">Simpan</button></td>
                 </tr>
             </table>
+            <table border="1">
+                <tr>
+                    <th>Username</th>
+                    <th>Nama Penuh</th>
+                    <th>Password</th>
+                    <th>Tindakan</th>
+                </tr>
+                <tr>
+                    <td>Ali</td>
+                    <td>Ali Bin Abu</td>
+                    <td>123456</td>
+                    <td><a href="reset/">(Reset)</a><a href="edit/">(Edit)</a><a href="Padam">(Padam)</a></td>
+                </tr>
+            </table>
         </form>
     </center>
 </body>
