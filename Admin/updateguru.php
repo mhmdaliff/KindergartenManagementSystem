@@ -23,37 +23,21 @@ $row = $resultusr->fetch_assoc();
         <h2>Update Guru</h2>
 
         <form name="myform" action="updatepro.php" method="post">
-            <center>
-                <br>
-                <b>idCustomer :</b>
-                <input type="text" name="idCustomer" value="<?php echo $row["idCustomer"]; ?>">
-                <br>
-                <br>
-                <b>Nama Penyewa :</b>
-                <input type="text" name="name" value="<?php echo $row["NamaPenyewa"]; ?>">
-                <br>
-                <br>
-                <b>No Telefon:</b>
-                <input type="text" name="noTelefon" value="<?php echo $row["NoTelefon"]; ?>">
-                <br>
-                <br>
-                <b>Email :</b>
-                <input type="email" name="email" value="<?php echo $row["Email"]; ?>">
-                <br>
-                <br>
-                <b>No IC :</b>
-                <input type="text" name="noIC" value="<?php echo $row["NoIC"]; ?>">
-                <br>
-                <br>
-                <b>Alamat :</b>
-                <input type="text" name="alamat" value="<?php echo $row["Alamat"]; ?>">
-
-            </center>
             <br>
-            <center>
-                <input type="submit" value="Update" style="background-color:PaleGreen;font-size: 15px;" />
-                <input type="hidden" name="idCustomer" value="<?php echo $row["idCustomer"]; ?>" />
-            </center>
+            <b>Id Guru :</b>
+            <input type="text" name="idguru" value="<?php echo $row["idguru"]; ?>">
+            <br>
+            <br>
+            <b>Nama Penuh :</b>
+            <input type="text" name="idname" value="<?php echo $row["idname"]; ?>">
+            <br>
+            <br>
+            <b>Password:</b>
+            <input type="text" name="password" value="<?php echo $row["password"]; ?>">
+            <br>
+
+            <input type="submit" value="Update" />
+            <input type="hidden" name="idGuru" value="<?php echo $row["idguru"]; ?>" />
         </form>
     </center>
 </body>
