@@ -26,7 +26,7 @@ $result = mysqli_query($conn, $sql);
         <form method="post" action="save.php">
             <table>
                 <tr>
-                    <td>Username</td>
+                    <td>Id Guru</td>
                     <td><input type="text" name="idguru"></td>
                 </tr>
                 <tr>
@@ -43,7 +43,7 @@ $result = mysqli_query($conn, $sql);
             </table>
             <table border="1">
                 <tr>
-                    <th>Username</th>
+                    <th>Id Guru</th>
                     <th>Nama Penuh</th>
                     <th>Password</th>
                 </tr>
