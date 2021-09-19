@@ -24,7 +24,7 @@ $result = mysqli_query($conn, $sql);
 
         <h1>Daftar senarai Guru</h1>
         <a href="register.php">Register Guru</a>
-        <form method="post">
+        <form method="post" action="save.php">
             <table>
                 <tr>
                     <td>Username</td>
