@@ -27,7 +27,7 @@ $result = mysqli_query($conn, $sql);
             <table>
                 <tr>
                     <td>Username</td>
-                    <td><input type="text" name="idname"></td>
+                    <td><input type="text" name="idguru"></td>
                 </tr>
                 <tr>
                     <td>Nama Penuh</td>
