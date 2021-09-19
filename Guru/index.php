@@ -46,14 +46,6 @@
                         <th>Tindakan</th>
 
                     </tr>
-                    <tr>
-                        <td>Mazlia</td>
-                        <td>Siti Mazlia Binti Bakhri</td>
-                        <td>Taman Indah Jaya,Kedah</th>
-                        <td>0198765432</td>
-                        <td>445566</td>
-                        <td><a href="reset/">(Reset)</a><a href="edit/">(Edit)</a><a href="Padam">(Padam)</a></td>
-                    </tr>
                 </table>
         </form>
     </center>

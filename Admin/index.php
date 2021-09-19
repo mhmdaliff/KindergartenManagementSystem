@@ -2,7 +2,7 @@
 session_start();
 require '../connection.php';
 
-$sql = "SELECT * FROM kereta";
+$sql = "SELECT * FROM guru";
 $result = mysqli_query($conn, $sql);
 ?>
 
@@ -28,6 +28,10 @@ $result = mysqli_query($conn, $sql);
                 <tr>
                     <td>Username</td>
                     <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Nama Penuh</td>
+                    <td><input type="text" name="fullname"></td>
                 </tr>
                 <tr>
                     <td>Password</td>
