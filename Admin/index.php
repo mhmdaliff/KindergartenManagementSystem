@@ -14,22 +14,23 @@
         <h2>System Name : Kindergarden Management System(KMS)</h2><br>
         <br>Nama Programmer :<a href="admin/">Admin(Aliff)</a>
 
-        <h1>Daftar senarai ibubapa</h1>
-        <table border="1">
-            <tr>
-                <th>Bil</th>
-                <th>Password</th>
-                <th>Tindakan</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>admin</td>
-                <td><a href="reset/">(Reset)</a><a href="edit/">(Edit)</a><a href="Padam">(Padam)</a></td>
-            </tr>
-        </table>
-
+        <h1>Daftar senarai Guru</h1>
+        <form method="post">
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Nama Penuh</td>
+                    <td><input type="text" name="fullname"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Simpan</button></td>
+                </tr>
+            </table>
+        </form>
     </center>
-
 </body>
 
 </html>
