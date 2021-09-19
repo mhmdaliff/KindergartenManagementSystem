@@ -31,10 +31,10 @@
             <li><a href="admin/index.php">Admin (Aliff)</a></li>
             <p>- Menguruskan senarai Guru</p>
 
-            <li><a href="manager/index.php">Guru (Amin)</a></li>
+            <li><a href="guru/index.php">Guru (Amin)</a></li>
             <p>- Menguruskan senarai Ibubapa</p>
 
-            <li><a href="customer/index.php">Ibubapa (Merisa)</a></li>
+            <li><a href="ibubapa/index.php">Ibubapa (Merisa)</a></li>
             <p>- Menguruskan senarai anak-anak</p>
         </ul>
 

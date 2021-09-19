@@ -12,8 +12,24 @@
 <body>
     <center>
         <h2>System Name : Kindergarden Management System(KMS)</h2><br>
-        <br>Nama Programmer: <a href="ibubapa/">ibubapa (Merisa)</a>
-        <br>Untuk masukkan senarai anak-anak
+        <br>Nama Programmer: <a href="ibubapa/">Ibubapa (Merisa)</a>
+
+        <h1>Daftar senarai anak</h1>
+        <form method="post">
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Nama Penuh</td>
+                    <td><input type="text" name="fullname"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Simpan</button></td>
+                </tr>
+            </table>
+        </form>
     </center>
 </body>
 
