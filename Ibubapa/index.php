@@ -2,7 +2,7 @@
 session_start();
 require '../connection.php';
 
-$sql = "SELECT * FROM ibubapa";
+$sql = "SELECT * FROM anak";
 $result = mysqli_query($conn, $sql);
 ?>
 <!DOCTYPE html>
