@@ -23,7 +23,6 @@ $result = mysqli_query($conn, $sql);
         <br>Nama Programmer :<a href="admin/">Admin(Aliff)</a>
 
         <h1>Daftar senarai Guru</h1>
-        <a href="register.php">Register Guru</a>
         <form method="post" action="save.php">
             <table>
                 <tr>
