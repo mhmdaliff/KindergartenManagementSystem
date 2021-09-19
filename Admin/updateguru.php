@@ -25,7 +25,7 @@ $row = $resultusr->fetch_assoc();
         <form action="updatepro.php" method="post">
             <br>
             <b>Id Guru :</b>
-            <input type="text" name="idguru" value="<?php echo $row["idguru"]; ?>">
+            <input type="text" name="idguru" value="<?php echo $row["idguru"]; ?>"readonly>
             <br>
             <br>
             <b>Nama Penuh :</b>
