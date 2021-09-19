@@ -38,7 +38,7 @@ $result = mysqli_query($conn, $sql);
                     <td><input type="text" name="password"></td>
                 </tr>
                 <tr>
-                    <td><button type="submit">Simpan</button></td>
+                    <td><button type="submit">Save</button></td>
                 </tr>
             </table>
             <table border="1">
