@@ -14,7 +14,7 @@
         <h2>System Name : Kindergarden Management System(KMS)</h2><br>
         <br>Nama Programmer: <a href="ibubapa/">Ibubapa (Merisa)</a>
 
-        <h1>Daftar senarai anak</h1>
+        <h1>Daftar senarai Ibubapa</h1>
         <form method="post">
             <table>
                 <tr>
