@@ -2,60 +2,36 @@
 session_start();
 require '../connection.php';
 
-$sql = "SELECT * FROM ibubapa";
-$result = mysqli_query($conn, $sql);
-header("location:index.php");
-?>
-<html>
 
-<head>
-    <title>KMS</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
-
-<body>
-    <center>
-        <h2>System Name : Kindergarden Management System(KMS)</h2><br>
-        <br>Nama Programmer :<a href="guru/">Guru(Amin)</a>
-        <br>
-        <table border="1">
-            <tr>
-                <th>Username</th>
-                <th>Username</th>
-                <th>Nama Penuh</th>
-                <th>Alamat</th>
-                <th>No. Telefon</th>
-                <th>Password</th>
-                <th>Tindakan</th>
-            </tr>
-
-            <?php
-            if (mysqli_num_rows($result) > 0) {
+$idibubapa =  $_POST["idibubapa"];
+$idname =  $_POST["idname"];
+$alamat =  $_POST["alamat"];
+$notelefon =  $_POST["notelefon"];
 
 
-                while ($row = mysqli_fetch_assoc($result)) {
-            ?>
 
-                    <tr>
+//error checking
 
-                        <td><?php echo $row["idibubapa"]; ?></td>
-                        <td><?php echo $row["idname"]; ?></td>
-                        <td><?php echo $row["password"]; ?></td>
-                        <td><?php echo $row["address"]; ?></td>
-                        <td><?php echo $row["contact"]; ?></td>
-                    </tr>
+if ($idibubapa == "") {
+    echo "<script>alert('Please Enter idibubapa');window.location='index.php'</script>";
+}
+if ($idname == "") {
+    echo "<script>alert('Please Enter idname ');window.location='index.php'</script>";
+}
 
-            <?php
+if ($alamat == "") {
 
-                }
-            } else {
-                echo "0 results";
-            }
-            mysqli_close($conn);
-            ?>
+    echo "<script>alert('Please Enter alamat');window.location='index.php'</script>";
+}
+if ($notelefon == "") {
 
-        </table>
-    </center>
-</body>
+    echo "<script>alert('Please Enter notelefon');window.location='index.php'</script>";
+}
+$sql = "INSERT INTO ibubapa(idibubapa,idname,alamat,notelefon)VALUES('$iibubapa','$idname','$alamat','$notelefon')";
 
-</html>
+if ($conn->query($sql) === TRUE) { //true --->successfully
+    echo "<script>alert('Register Add Successfully');window.location='Index.php'</script>";
+} else {
+    echo "Error:" . $sql . "<br>" . $conn->error;
+}
+$conn->close();
