@@ -20,13 +20,13 @@ header("location:index.php");
         <br>
         <table border="1">
             <tr>
-            <th>Username</th>
-                    <th>Nama Penuh</th>
-                    <th>Alamat</th>
-                    <th>No. Telefon</th>
-                    <th>Password</th>
-                    <th>Tindakan</th>
-
+                <th>Username</th>
+                <th>Username</th>
+                <th>Nama Penuh</th>
+                <th>Alamat</th>
+                <th>No. Telefon</th>
+                <th>Password</th>
+                <th>Tindakan</th>
             </tr>
 
             <?php
@@ -37,12 +37,12 @@ header("location:index.php");
             ?>
 
                     <tr>
-                        
-                    <td><?php echo $row["idibubapa"]; ?></td>
-                            <td><?php echo $row["idname"]; ?></td>
-                            <td><?php echo $row["password"]; ?></td>
-                            <td><?php echo $row["alamat"]; ?></td>
-                            <td><?php echo $row["notelefon"]; ?></td>
+
+                        <td><?php echo $row["idibubapa"]; ?></td>
+                        <td><?php echo $row["idname"]; ?></td>
+                        <td><?php echo $row["password"]; ?></td>
+                        <td><?php echo $row["address"]; ?></td>
+                        <td><?php echo $row["contact"]; ?></td>
                     </tr>
 
             <?php
