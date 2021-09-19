@@ -4,9 +4,10 @@ require '../connection.php';
   
 $idguru=$_POST["idanak"];
 $username=$_POST["username"];
-$password=$_POST["password"];
+$age=$_POST["age"];
+$noic=$_POST["noic"];
 
-$sql = "UPDATE anak SET idanak='$idanak',username='$username',password='$password' where idanak='$idanak'";  
+$sql = "UPDATE anak SET idanak='$idanak',username='$username',age='$age',noic='$noic' where idanak='$idanak'";  
   
 if($conn->query($sql)=== TRUE){
   echo "<script>alert('Update Successfully');window.location='index.php'</script>";  

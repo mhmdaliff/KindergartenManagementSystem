@@ -47,6 +47,7 @@ $result = mysqli_query($conn, $sql);
                 <table border="1">
                     <tr>
                        
+                        <th>Id Anak</th>
                         <th>Nama Penuh</th>
                         <th>Umur</th>
                         <th>No. Ic</th>
