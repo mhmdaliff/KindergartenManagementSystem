@@ -46,6 +46,7 @@ $result = mysqli_query($conn, $sql);
                     <th>Id Guru</th>
                     <th>Nama Penuh</th>
                     <th>Password</th>
+                    <th>Action</th> 
                 </tr>
                 <?php
                 if (mysqli_num_rows($result) > 0) {
@@ -58,6 +59,10 @@ $result = mysqli_query($conn, $sql);
                             <td><?php echo $row["idguru"]; ?></td>
                             <td><?php echo $row["idname"]; ?></td>
                             <td><?php echo $row["password"]; ?></td>
+                            <td colspan="2">
+                                <a href="updateguru.php?idkereta=<?php echo $row["idguru"]; ?>">Update</a>
+                                <a href="deleteguru.php?idkereta=<?php echo $row["idguru"]; ?>" onclick="return confirm('Are you sure to delete?')">Delete</a>
+                            </td>
                         </tr>
 
                 <?php
