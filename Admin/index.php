@@ -13,8 +13,8 @@
     <center>
         <h2>System Name : Kindergarden Management System(KMS)</h2><br>
         <br>Nama Programmer :<a href="admin/">Admin(Aliff)</a>
-        <br>Untuk masukkan senarai guru
 
+        <h1>Daftar senarai ibubapa</h1>
         <table border="1">
             <tr>
                 <th>Bil</th>
@@ -27,7 +27,7 @@
                 <td><a href="reset/">(Reset)</a><a href="edit/">(Edit)</a><a href="Padam">(Padam)</a></td>
             </tr>
         </table>
-        
+
     </center>
 
 </body>
