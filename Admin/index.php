@@ -27,15 +27,15 @@ $result = mysqli_query($conn, $sql);
             <table>
                 <tr>
                     <td>Id Guru</td>
-                    <td><input type="text" name="idguru"></td>
+                    <td><input type="int" name="idguru"></td>
                 </tr>
                 <tr>
                     <td>Nama Penuh</td>
-                    <td><input type="text" name="idname"></td>
+                    <td><input type="int" name="idname"></td>
                 </tr>
                 <tr>
                     <td>Password</td>
-                    <td><input type="text" name="password"></td>
+                    <td><input type="int" name="password"></td>
                 </tr>
                 <tr>
                     <td><button type="submit">Save</button></td>
