@@ -11,19 +11,36 @@
 
 <body>
     <center>
+        <form action="pageHome.php" method="post">
+            <h2>Login</h2>
+            <div class="container"></div>
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required><br><br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required><br><br>
+            <button type="submit">Login</button>
+        </form>
+
         <h2>System Name : Kindergarden Management System(KMS)</h2>
 
-        <a href="Admin">Admin : Aliff </a><br>
-        <br>
-        <br>
+        <div>
+            <h2>CRUD</h2>
+        </div>
 
-        <a href="Guru">Guru : Amin </a><br>
-        <br>
-        <br>
+        <ul>
+            <li><a href="admin/index.php">Admin (Aliff)</a></li>
+            <p>- Menguruskan senarai Guru</p>
 
+            <li><a href="manager/index.php">Guru (Amin)</a></li>
+            <p>- Menguruskan senarai Ibubapa</p>
 
-        <a href="Ibubapa">Ibubapa : Merisa </a> <br>
-        <br>
+            <li><a href="customer/index.php">Ibubapa (Syakir)</a></li>
+            <p>- Menguruskan senarai anak-anak</p>
+        </ul>
+
+        <hr>
+        </hr>
+
     </center>
 </body>
 
