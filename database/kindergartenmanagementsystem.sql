@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 19, 2021 at 02:23 PM
+-- Generation Time: Sep 19, 2021 at 02:27 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.3.30
 
@@ -40,6 +40,20 @@ CREATE TABLE `guru` (
 INSERT INTO `guru` (`idguru`, `idname`, `password`) VALUES
 ('A001', 'Muhammad Aliff Bin Abdul Haris', '1234567');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ibubapa`
+--
+
+CREATE TABLE `ibubapa` (
+  `id_ibubapa` int(11) NOT NULL,
+  `id_name` int(30) NOT NULL,
+  `password` int(11) NOT NULL,
+  `alamat` varchar(30) NOT NULL,
+  `no_telefon` varchar(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 --
 -- Indexes for dumped tables
 --
@@ -49,6 +63,12 @@ INSERT INTO `guru` (`idguru`, `idname`, `password`) VALUES
 --
 ALTER TABLE `guru`
   ADD PRIMARY KEY (`idguru`);
+
+--
+-- Indexes for table `ibubapa`
+--
+ALTER TABLE `ibubapa`
+  ADD PRIMARY KEY (`id_ibubapa`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
