@@ -36,7 +36,7 @@ header("location:index.php");
 
                     <tr>
                         <td><?php echo $row["idguru"]; ?></td>
-                        <td><?php echo $row["fullname"]; ?></td>
+                        <td><?php echo $row["idname"]; ?></td>
                         <td><?php echo $row["password"]; ?></td>
                     </tr>
 

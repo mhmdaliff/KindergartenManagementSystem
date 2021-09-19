@@ -32,7 +32,7 @@ $result = mysqli_query($conn, $sql);
                 </tr>
                 <tr>
                     <td>Nama Penuh</td>
-                    <td><input type="text" name="fullname"></td>
+                    <td><input type="text" name="idname"></td>
                 </tr>
                 <tr>
                     <td>Password</td>
