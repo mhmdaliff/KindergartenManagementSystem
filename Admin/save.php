@@ -2,27 +2,29 @@
 session_start();
 require '../connection.php';
 
-$sql = "SELECT * FROM guru";
-$result = mysqli_query($conn, $sql);
-header("location:index.php");
+$idguru = $_POST["idguru"];
+$idname = $_POST["idname"];
+$password = $_POST["password"];
 
-if (mysqli_num_rows($result) > 0) {
+//error checking
 
-
-    while ($row = mysqli_fetch_assoc($result)) {
-?>
-
-        <tr>
-            <td><?php echo $row["idguru"]; ?></td>
-            <td><?php echo $row["idname"]; ?></td>
-            <td><?php echo $row["password"]; ?></td>
-        </tr>
-
-<?php
-
-    }
-} else {
-    echo "0 results";
+if ($idguru == "") {
+    echo "<script>alert('Please Enter idguru');window.location='index.php'</script>";
 }
-mysqli_close($conn);
-?>
+if ($idname == "") {
+    echo "<script>alert('Please Enter idname ');window.location='index.php'</script>";
+}
+
+if ($password == "") {
+
+    echo "<script>alert('Please Enter password');window.location='index.php'</script>";
+}
+
+$sql = "INSERT INTO guru(idguru,idname,password)VALUES('$idguru','$idname','$password')";
+
+if ($conn->query($sql) === TRUE) { //true --->successfully
+    echo "<script>alert('Register Add Successfully');window.location='Index.php'</script>";
+} else {
+    echo "Error:" . $sql . "<br>" . $conn->error;
+}
+$conn->close();

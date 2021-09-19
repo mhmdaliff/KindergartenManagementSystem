@@ -23,12 +23,11 @@ $result = mysqli_query($conn, $sql);
         <br>Nama Programmer :<a href="admin/">Admin(Aliff)</a>
 
         <h1>Daftar senarai Guru</h1>
-        <a href="register.php">Register Guru</a>
         <form method="post" action="save.php">
             <table>
                 <tr>
-                    <td>Username</td>
-                    <td><input type="text" name="username"></td>
+                    <td>Id Guru</td>
+                    <td><input type="text" name="idguru"></td>
                 </tr>
                 <tr>
                     <td>Nama Penuh</td>
@@ -39,12 +38,12 @@ $result = mysqli_query($conn, $sql);
                     <td><input type="text" name="password"></td>
                 </tr>
                 <tr>
-                    <td><button type="submit">Simpan</button></td>
+                    <td><button type="submit">Save</button></td>
                 </tr>
             </table>
             <table border="1">
                 <tr>
-                    <th>Username</th>
+                    <th>Id Guru</th>
                     <th>Nama Penuh</th>
                     <th>Password</th>
                 </tr>
