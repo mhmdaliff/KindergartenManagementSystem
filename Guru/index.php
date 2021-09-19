@@ -26,7 +26,7 @@ $result = mysqli_query($conn, $sql);
             <table>
                 <tr>
                     <td>Username</td>
-                    <td><input type="text" name="username"></td>
+                    <td><input type="text" name="idname"></td>
                 </tr>
                 <tr>
                     <td>Password</td>
@@ -63,8 +63,8 @@ $result = mysqli_query($conn, $sql);
                                 <td><?php echo $row["idibubapa"]; ?></td>
                                 <td><?php echo $row["idname"]; ?></td>
                                 <td><?php echo $row["password"]; ?></td>
-                                <td><?php echo $row["alamat"]; ?></td>
-                                <td><?php echo $row["notelefon"]; ?></td>
+                                <td><?php echo $row["address"]; ?></td>
+                                <td><?php echo $row["contact"]; ?></td>
                             </tr>
 
                     <?php
