@@ -25,32 +25,31 @@ $result = mysqli_query($conn, $sql);
         <form method="post" action="save.php">
             <table>
                 <tr>
-                    <td>Username</td>
+                    <td>Id ibubapa</td>
+                    <td><input type="text" name="idibubapa"></td>
+                </tr>
+                <tr>
+                    <td>Nama Penuh</td>
                     <td><input type="text" name="idname"></td>
                 </tr>
                 <tr>
-                    <td>Password</td>
-                    <td><input type="text" name="password"></td>
-                </tr>
-                <tr>
                     <td>Alamat</td>
-                    <td><textarea id="address" name="address" rows="4" cols="50" value=""></textarea></td>
+                    <td><textarea id="address" name="alamat" rows="4" cols="50" value=""></textarea></td>
                 </tr>
                 <tr>
                     <td>No. Telefon</td>
-                    <td><input type="text" name="contact" value="" required></td>
+                    <td><input type="text" name="notelefon" value="" ></td>
                 </tr>
+            
                 <tr>
                     <td><button type="submit">Simpan</button></td>
                 </tr>
                 <table border="1">
                     <tr>
-                        <th>Username</th>
+                        <thi>idibubapa</th>
                         <th>Nama Penuh</th>
                         <th>Alamat</th>
                         <th>No. Telefon</th>
-                        <th>Password</th>
-                        <th>Tindakan</th>
 
                     </tr>
                     <?php
@@ -62,9 +61,9 @@ $result = mysqli_query($conn, $sql);
                             <tr>
                                 <td><?php echo $row["idibubapa"]; ?></td>
                                 <td><?php echo $row["idname"]; ?></td>
-                                <td><?php echo $row["password"]; ?></td>
-                                <td><?php echo $row["address"]; ?></td>
-                                <td><?php echo $row["contact"]; ?></td>
+                                <td><?php echo $row["alamat"]; ?></td>
+                                <td><?php echo $row["notelefon"]; ?></td>
+                                
                             </tr>
 
                     <?php
