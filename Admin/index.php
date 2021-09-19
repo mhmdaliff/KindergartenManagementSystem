@@ -60,8 +60,8 @@ $result = mysqli_query($conn, $sql);
                             <td><?php echo $row["idname"]; ?></td>
                             <td><?php echo $row["password"]; ?></td>
                             <td colspan="2">
-                                <a href="updateguru.php?idkereta=<?php echo $row["idguru"]; ?>">Update</a>
-                                <a href="deleteguru.php?idkereta=<?php echo $row["idguru"]; ?>" onclick="return confirm('Are you sure to delete?')">Delete</a>
+                                <a href="updateguru.php?idguru=<?php echo $row["idguru"]; ?>">Update</a>
+                                <a href="deleteguru.php?idguru=<?php echo $row["idguru"]; ?>" onclick="return confirm('Are you sure to delete?')">Delete</a>
                             </td>
                         </tr>
 
