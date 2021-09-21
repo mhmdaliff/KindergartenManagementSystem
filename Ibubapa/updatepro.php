@@ -2,7 +2,7 @@
 session_start();  
 require '../connection.php';  
   
-$idguru=$_POST["idanak"];
+$idanak=$_POST["idanak"];
 $username=$_POST["username"];
 $age=$_POST["age"];
 $noic=$_POST["noic"];
